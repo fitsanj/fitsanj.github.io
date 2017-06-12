@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="محاسبه BMI و وزن مناسب برای شما">
+  <meta name="robots" content="noodp">
+  <meta property="og:title" content="وزن مناسب برای شما چقدر است؟، ابزار محاسبه آنلاین BMI">
+  <meta property="og:description" content="فیت‌سَنج، ابزار آنلاین محاسبه شاخص توده بدنی. محاسبه کنید وزن مناسب برای شما چقدر است و در کدام دسته‌بندی وزنی قرار می‌گیرید.">
+  <meta property="og:image" content="https://www.fitsanj.com/bmi.html/image/thumbnail.jpg">
+  <meta property="og:url" content="https://www.fitsanj.com/bmi.html">
+  <meta property="twitter:title" content="وزن مناسب برای شما چقدر است؟، ابزار محاسبه آنلاین BMI">
+  <meta property="twitter:description" content="فیت‌سَنج، ابزار آنلاین محاسبه شاخص توده بدنی. محاسبه کنید وزن مناسب برای شما چقدر است و در کدام دسته‌بندی وزنی قرار می‌گیرید.">
+  <meta property="twitter:image" content="https://www.fitsanj.com/bmi.html/image/thumbnail.jpg">
+  <meta property="twitter:url" content="https://www.fitsanj.com/bmi.html">
+  <link rel="canonical" href="https://www.fitsanj.com/bmi-calculator.html">
+  <link rel="icon" type="image/png" href="https://www.fitsanj.com/image/favicon.png">
+  <style media="screen">
+    html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}body{font-family:shabnam,tahoma,sans-serif;direction:rtl;font-size:16px;display:flex;flex-direction:column;line-height:1.4;background:#f8f8f8}a{text-decoration:none;color:#147bf0}img{max-width:100%;height:auto}ul:not(footer ul){padding-right:16px;clear:both}li:not(footer li){padding-bottom:10px}.clearfix{content:"";display:table;clear:both}header{border-bottom:1px solid #d5d4d4;box-shadow:0 4px 4px rgba(0,0,0,.2);background:#fff;width:100%;position:relative}header:after{content:"";height:6px;position:absolute;width:100%;bottom:-6px}.container{max-width:1240px;margin:0 auto;padding:0 10px}.link-to-bmi{line-height:40px;display:inline-block;padding:0 16px;background:#42c342;border-radius:3px;color:#fff;float:left;margin:14px 0;font-weight:700}.link-to-bmi:hover{background:#45ba45;transition:.3s}#bmi-calculator-container{text-align:center;padding:34px 0;background:#fff;background-image:linear-gradient(140deg,#dedeff,#fff,#dedeff);border-bottom:2px solid #52cebc;position:relative;min-height:364px}.content{max-width:960px;padding:10px 20px;margin:0 auto;line-height:1.8;flex:1 0 auto}.content h1,.content h2,.content h3{font-size:18px;margin:28px 0 4px;font-weight:700}.content p{font-size:16px;word-spacing:1px;margin-bottom:10px;margin-top:0;float:right}.content:not(.bmi-calculator-content){margin-top:46px}
+  </style>
+  <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+  <script>
+  (function(w){"use strict";var loadCSS=function(href,before,media){var doc=w.document;var ss=doc.createElement("link");var ref;if(before){ref=before}else{var refs=(doc.body||doc.getElementsByTagName("head")[0]).childNodes;ref=refs[refs.length-1]}var sheets=doc.styleSheets;ss.rel="stylesheet";ss.href=href;ss.media="only x";function ready(cb){if(doc.body){return cb()}setTimeout(function(){ready(cb)})}ready(function(){ref.parentNode.insertBefore(ss,before?ref:ref.nextSibling)});var onloadcssdefined=function(cb){var resolvedHref=ss.href;var i=sheets.length;while(i--){if(sheets[i].href===resolvedHref){return cb()}}setTimeout(function(){onloadcssdefined(cb)})};function loadCB(){if(ss.addEventListener){ss.removeEventListener("load",loadCB)}ss.media=media||"all"}if(ss.addEventListener){ss.addEventListener("load",loadCB)}ss.onloadcssdefined=onloadcssdefined;onloadcssdefined(loadCB);return ss};if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}else{w.loadCSS=loadCSS}})(typeof global!=="undefined"?global:this);
+  </script>
+  
+  <script>loadCSS( "css/style.css" );</script>
+  <title>محاسبه BMI و وزن مناسب برای شما</title>
+</head>
+<body>
+  <header class="clearfix">
+    <div class="container">
+      <div class="share header-share">
+        <span>این ابزار را با دوستان خود به اشتراک بگذارید</span>
+        <a href="https://t.me/share/url=https://www.fitsanj.com" class="telegram">تلگرام</a>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.fitsanj.com%2F" class="twitter">Twitter</a>
+      </div>
+      <div class="logo">
+        <img src="image/logo.svg" alt="fitsanj logo">
+      </div><!--logo-->
+    </div>
+  </header>
+  <section id="bmi-calculator-container" class="bmi-calculator">
+    <div class="container">
+      <div id="bmi-calculator">
+        <h1 class="bmi-calculator-title">محاسبه BMI</h1>
+        <span class="upper-twenty">برای افراد بالای ۲۰ سال</span>
+        <form id="bmi-form" class="bmi-form">
+          <div class="height">
+            <label class="height-label" for="height">قد را به سانتی‌متر وارد کنید</label>
+            <input id="height" type="text" name="height" value="" maxlength="3">
+          </div>
+          <div class="weight">
+            <label class="weight-label" for="height">وزن را به کیلوگرم وارد کنید</label>
+            <input id="weight" type="text" name="weight" value="" maxlength="3">
+          </div>
+          <a href="#" id="do-calculate">محاسبه کن</a>
+        </form>
+      </div><!--bmi-calculator-->
+      <div id="bmi-result">
+        <div class="share"></div>
+        <div class="your-bmi"><span class="your-bmi-title">BMI = </span><span id="bmi-number"></span></div>
+        <div class="bmi-result-descreption">BMI شما <span id="bmi-number-category"></span>
+          است و بر اساس دسته بندی وزنی شما <span id="weight-category"></span>. وزن مناسب برای شما بین <span id="min-ideal-weight"></span> تا <span id="max-ideal-weight"></span> کیلوگرم است.
+        </div>
+        <div class="suggested-article">
+          <div class="suggested-article-title">مطلب پیشنهادی برای شما</div>
+          <ul>
+            <li id="suggested"></li>
+          </ul>
+        </div>
+        <div class="bmi-result-note">شاخص توده بدنی یا BMI برای افراد مسن و افرادی که حجم عضله زیادی دارند مناسب نیست</div>
+        <table>
+          <tr>
+            <th>BMI</th>
+            <th>دسته‌بندی وزنی</th>
+          </tr>
+          <tr class="underweight">
+            <td>کمتر از 18.5</td>
+            <td>کمبود وزن</td>
+          </tr>
+          <tr class="fit">
+            <td>18.5 تا 24.9</td>
+            <td>وزن مناسب</td>
+          </tr>
+          <tr class="overweight">
+            <td>25 تا 29.9</td>
+            <td>اضافه وزن</td>
+          </tr>
+          <tr class="obese">
+            <td>بالاتر از 30</td>
+            <td>چاق</td>
+          </tr>
+        </table>
+        <a href="/" class="do-it-again">محاسبه مجدد</a>
+      </div><!--bmi-result-->
+      <div id="error">
+        <div class="error-message">اطلاعاتی که وارد کردید صحیح نیست، لطغا دوباره محاسبه کنید. توجه داشته باشید وزن و قدتان را باید به عدد وارد نمایید.</div>
+        <a href="/" class="do-it-again">محاسبه مجدد</a>
+      </div>
+    </div><!--container-->
+    <div id="loading">
+      <div class="spin"></div>
+    </div>
+  </section><!--bmi-calculator-->
+  <main class="content bmi-calculator-content">
+    <h2>بی ام آی (BMI) چیست؟</h2>
+      <p>بی ام آی (BMI) از وزن فرد به کیلوگرم تقسیم بر مجذور قد فرد به متر بدست می‌آید. بی ام آی به طور مستقیم میزان چربی بدن را اندازه‌گیری نمی‌کند اما تحقیقات نشان داده است که BMI به طور متوسط با روش‌هایی که به صورت مستقیم‌تر چربی را اندازه گیری می‌کنند مانند چگالی‌سنجی (وزن کردن زیر آب) و برخی دیگر از روش‌ها همبستگی دارد. به طور کلی BMI یک روش ارزان و آسان برای مشاهده کردن این‌که فرد در کدام دسته‌بندی وزنی (کمبود وزن، وزن مناسب، اضافه وزن، چاقی) قرار می‌گیرد است.</p>
+      <h2>از بی ام آی (BMI) چگونه استفاده می‌شود؟</h2>
+      <p>بی ام آی (BMI) بالا می‌تواند یک نشانه این باشد که بدن دارای میزان چربی زیاد است. از BMI می‌توان به عنوان یک ابزار اندازه‌گیری استفاده کرد اما نمی‌توان از آن برای تشخیص میزان چربی بدن یا سلامت یک فرد استفاده کرد.<br>
+      برای این‌که مشخص شود که BMI بالا یک خطر برای سلامتی است، باید یک متخصص باید ارزیابی‌های بیشتری انجام دهد. این ارزیابی‌ها می‌تواند شامل اندازه‌گیری میزان چربی با کولیس، ارزیابی نوع تغذیه، میزان فعالیت بدنی،‌ سابقه خانوادگی و دیگر روش‌های مناسب اندازه‌گیری سلامت باشد.</p>
+      <h2>چرا از BMI برای اندازه‌گیری اضافه وزن و چاقی استفاده می‌شود؟</h2>
+      <p>بی ام آی می‌تواند برای ارزیابی اضافه وزن و چاقی جامعه مورد استفاده قرار گیرد، زیرا محاسبه آن تنها به قد و وزن فرد نیاز دارد و یک روش ساده برای استفاده متخصصین و برای استفاده عموم مردم است. از BMI می‌توان به عنوان یک ابزار مشاهده‌ای برای وزن بدن استفاده کرد ولی یک روش تشخیصی نیست.</p>
+      <h2>دیگر روش‌های ارزیابی اضافه وزن چیست؟</h2>
+      <p>دیگر روش‌های اندازه‌گیری اضافه وزن شامل اندازه‌گیری چربی زیر پوست با کولیس(کالیپر)،‌ وزن‌کردن زیر آب و دیگر روش‌ها می‌شود. با این حال این ابزارها همیشه به آسانی در دسترس نیستند، و یا گران هستند یا احتیاج به یک فرد آموزش دیده برای انجام شدن دارند.</p>
+      <h2>روش محاسبه BMI چیست؟</h2>
+      <p>BMI برای کودکان و بزرگسالان به یک روش محاسبه می‌شود. بی ام آی از تقسیم وزن به کیلوگرم بر مجذور قد به متر بدست می‌آید برای مثال محسابه BMI برای فردی با ۱۷۰ سانتی متر قد و ۷۰ کیلوگرم وزن به این صورت محاسبه می‌شود: ۲۴/۲۲ = (۱/۷ × ۱/۷) ÷ ۷۰</p>
+      <h2>چگونه از نتیجه BMI برای بزرگسالان استفاده می‌شود؟</h2>
+      <p>برای افراد ۲۰ سال و بالاتر نتیجه BMI به وسیله معیار دسته‌بندی موقعیت وزنی تفسیر می‌شود. این دسته بندی برای مردان و زنان در همه دسته‌بندی‌های وزنی و در همه سنین یکسان است.
+      برای کودکان و نوجوانان تفسیر نتیجه BMI به سن و جنسیت آن‌ها بستگی دارد.</p>
+      <h3>آیا BMI به صورت یکسان برای کودکان و بزرگسالان تفسیر می‌شود؟</h3>
+      <p>بی ام آی به صورت متفاوتی برای کودکان و بزرگسالان تفسیر می‌شود، گرچه BMI کودکان با همان فرمول BMI بزرگسالان محاسبه می‌شود. BMI کودکان و نوجوانان باید بسته به سن و جنسیت آن‌ها تفسیر شود، زیرا میزان چربی بدن به نسبت سن تغییر می‌کند و میزان چربی بدن بین دختران و پسران متفاوت است.</p>
+      <h3>چقدر BMI به عنوان نشانه میزان چربی بدن مناسب است؟</h3>
+      <p>همبستگی BMI و میزان چربی بدن نسبتا قوی است،‌ اما حتی اگر دو فرد BMI یکسان داشته باشند ممکن است وضعیت وزنی بدن آن‌ها متفاوت باشد. به طور کلی:</p>
+      <ul class="same-bmi">
+      <li>با BMI یکسان، احتمال این که زنان چربی بدن بیشتری نسبت به مردان داشته باشند بیشتر است.</li>
+      <li>با BMI یکسان، افراد با سن بالاتر،‌ به طور متوسط احتمال بیشتری دارد که چربی بدن بیشتری از افراد جوان‌تر داشته باشند.</li>
+      <li>با BMI یکسان، ورزشکاران چربی بدن کمتری نسبت به افرادی که وزشکار نیستند دارند.</li>
+      </ul>
+      <h3>اگر یک فرد ورزشکار یا غیر ورزشکار با حجم عضله زیاد دارای BMI بالای ۲۵ باشد، آیا با این حال این فرد دارای اضافه وزن است؟</h3>
+      <p>با توجه به دسته بندی وزنی BMI هر شخصی که دارای BMI بین 25 و 29.9 باشد، در دسته اضافه وزن و هر فردی که دارای BMI بالای 30 باشد در دسته چاقی دسته‌بندی می‌شود.<br>
+      با این حال، ممکن است ورزشکارانی که BMI بالا دارند به دلیل حجم عضله بالا باشد و نه چربی بدنی بالا. به طور کلی، فردی که دارای BMI بالا است احتمال بیشتری دارد که دارای چربی بدنی باشد و به عنوان فردی که دارای اضافه وزن یا چاقی است در نظر گرفته شود، ولی ممکن است این موضوع در مورد وزشکاران درست نباشد. یک متخصص باید ارزیابی‌های درست درباره سلامت فرد انجام دهد تا موقعیت و خطرهای سلامتی فرد را بسنجد.</p>
+    <div class="source">
+      <span class="source-title">منبع:</span>
+      <a href="https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html" target="_blank" class="source-link">CDC</a>
+    </div><!--source-->
+    <div class="share share-notice">
+      <div class="share-notice-description">این وبسایت را با دوستان خود به اشتراک بگذارید</div>
+      <a href="https://t.me/share/url=https://www.fitsanj.com" class="telegram icon">تلگرام</a>
+      <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.fitsanj.com%2F" class="twitter">Twitter</a>
+      <span id="close-notice"></span>
+    </div>
+  </main><!--content-->
+  <footer>
+    <ul>
+      <li><a href="#">تماس با ما</a></li>
+      <li><a href="#">درباره ما</a></li>
+      <li><a href="#">حریم خصوصی</a></li>
+      <li><a href="#">شرایط استفاده</a></li>
+    </ul>
+    <div class="copyright">تمامی حقوق محفوظ است</div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

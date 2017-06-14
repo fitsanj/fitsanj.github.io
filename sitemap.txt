@@ -1,6 +1,6 @@
 https://www.fitsanj.com
 https://www.fitsanj.com/blog.html
 https://www.fitsanj.com/blog/bmi-classification.html
-https://www.fitsanj.com/blog/bmi-history
-https://www.fitsanj.com/blog/lose-weight
-https://www.fitsanj.com/blog/underweight-guide
+https://www.fitsanj.com/blog/bmi-history.html
+https://www.fitsanj.com/blog/lose-weight.html
+https://www.fitsanj.com/blog/underweight-guide.html
